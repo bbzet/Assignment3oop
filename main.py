@@ -15,7 +15,7 @@ if __name__ == '__main__':
     account1.set_account_holder('Baiastan')
     print(f'After changing account holder: {account1.get_account_holder()}')
 
-    account1.__str__()
+    print(account1.__str__())
 
     account1.__add__(200)
 
