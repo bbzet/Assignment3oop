@@ -22,8 +22,10 @@ class PersonalAccount:
             print('From your balance withdrawn: ', amount)
             transaction = Amount(amount, "WITHDRAWAL")
             self.transactions.append(transaction)
-        else:
+        elif amount > self.__balance:
             print("Your balance is not enough.")
+        else:
+            print('Withdrawal amount must be positive.')
 
     def print_transaction_history(self):
         for transaction in self.transactions:
