@@ -1,5 +1,4 @@
 from Amount import Amount
-from datetime import datetime
 
 class PersonalAccount:
     def __init__(self, account_number, account_holder):
